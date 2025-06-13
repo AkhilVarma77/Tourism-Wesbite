@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Details Submitted</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('./contact.webp') no-repeat center center/cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .card h1 {
+      font-size: 2rem;
+      color: #ffb700;
+      margin-bottom: 20px;
+    }
+
+    .detail {
+      text-align: left;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #fcd15a;
+    }
+
+    .value {
+      margin-left: 5px;
+      color: #ffffff;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffa600;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-btn:hover {
+      background-color: #ff8800;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Message Sent Successfully!</h1>
+    <div class="detail"><span class="label">Name:</span><span class="value" id="name"></span></div>
+    <div class="detail"><span class="label">Email:</span><span class="value" id="email"></span></div>
+    <div class="detail"><span class="label">Contact Number:</span><span class="value" id="number"></span></div>
+    <div class="detail"><span class="label">Subject:</span><span class="value" id="subject"></span></div>
+    <div class="detail"><span class="label">Message:</span><span class="value" id="message"></span></div>
+
+    <a href="index.html" class="back-btn">Back to Home</a>
+
+
+    <h1>Our Contact Details</h1>
+    <p>Mobile No : 9381344619</p>
+    <p>akhilvarmaalluri@gmail.com</p>
+  </div>
+
+  <script>
+    const details = JSON.parse(localStorage.getItem("contactDetails"));
+    if (details) {
+      document.getElementById("name").textContent = details.name;
+      document.getElementById("email").textContent = details.email;
+      document.getElementById("number").textContent = details.number;
+      document.getElementById("subject").textContent = details.subject;
+      document.getElementById("message").textContent = details.message;
+    }
+  </script>
+</body>
+</html>
