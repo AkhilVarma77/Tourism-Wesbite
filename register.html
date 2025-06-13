@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-image: url('./register.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register-container {
+            background: rgba(255, 255, 255, 0.96);
+            padding: 3rem;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .register-container h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .register-container input {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .register-container button {
+            width: 100%;
+            padding: 1rem;
+            background-color: #ff6600;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .register-container button:hover {
+            background-color: #e65c00;
+        }
+
+        .register-container .login-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            display: block;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .register-container .login-link:hover {
+            color: #ff6600;
+        }
+        .btn{
+             width: 100%;
+            padding: 1rem;
+            background-color: #7fb48c;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Create Your Account</h2>
+        <form action="#">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="password" placeholder="Create Password" required />
+            <input type="password" placeholder="Confirm Password" required />
+            <button type="submit">Register</button><br><br><br>
+            <a href="index.html" class="btn">Back to Home</a>
+
+        </form>
+        <a href="login.html" class="login-link">Already have an account? Login</a>
+    </div>
+</body>
+</html>
