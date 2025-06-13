@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel Agency Website</title>
+
+     <!--      Fonts      -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--        CSS         -->
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    
+<!--        Header Section      -->
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+
+<!--        login form      -->
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit"  value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="forgot-password.html">click here</a></p>
+        <p>don't have an accounr?<a href="register.html">Register Now</a></p> 
+    </form>
+</div>
+
+<!--        Header Section   end   -->
+
+<!--        Home Section Start      -->
+        <section class="home" id="home">
+        
+        <div class="content">
+         <h3>adventure us worthwhile</h3>
+         <p>discover new places with us,adventure awaits</p>
+         <a href="https://www.keralatourism.org/" class="btn">discover more</a>
+        </div>
+        
+    <div class="controls">
+        <span class="vid-btn active" data-src="./video1.mp4"></span>
+        <span class="vid-btn" data-src="./video2.mp4"></span>
+        <span class="vid-btn" data-src="./video3.mp4"></span>
+        <span class="vid-btn" data-src="./video4.mp4"></span>
+        <span class="vid-btn" data-src="./video5.mp4"></span>
+    </div>  
+
+    <div class="video-container">
+        <video src="./video1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+        </section>
+
+<!--        Header Section   Ends   -->
+<!--        Book Section   Starts   -->
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="./travel1.jpg" alt="">
+        </div>
+
+
+  <form action="booking-details.html" method="get" onsubmit="return validateDates()">
+  <!-- your input fields -->
+  <div class="inputBox">
+    <h3>Where to</h3>
+    <input type="text" placeholder="place name" name="place" required>
+  </div>
+  <div class="inputBox">
+    <h3>How many</h3>
+    <input type="number" placeholder="number of guests" name="guests" required>
+  </div>
+  <div class="inputBox">
+    <h3>Arrivals</h3>
+    <input type="date" name="arrival" id="arrival-date" required>
+  </div>
+  <div class="inputBox">
+    <h3>Leaving</h3>
+    <input type="date" name="leaving" id="leaving-date" required>
+  </div>
+  <input type="submit" class="btn" value="Book Now">
+</form>
+
+
+    </div>
+
+</section>
+<!--        Book Section   Ends   -->
+<!--        Package Section   Starts   -->
+
+<section class="packages" id="packages">
+   
+ <h1 class="heading">
+    <span>p</span>
+    <span>a</span>
+    <span>c</span>
+    <span>k</span>
+    <span>a</span>
+    <span>g</span>
+    <span>e</span>
+    <span>s</span>
+ </h1>
+
+   <div class="box-container">
+
+    <div class="box">
+        <img src="./package.jpeg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+            <p>"A sensory overload—golden sunsets at Marine Drive, spicy street food, and Bollywood glamour all in one!"</p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$ 140.00 <span>$190.00</span></div>
+        <a href="#book" class="btn">book now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./package2.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>sydney</h3>
+            <p>"Harbour Bridge climbs, Opera House selfies, and Bondi Beach vibes—Australia’s iconic coastal gem!"</p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$ 160.00 <span>$200.00</span></div>
+        <a href="#book" class="btn">book now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./package3.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Europe</h3>
+            <p>"Castles, cobblestones, and café culture—every corner whispers history and charm!"</p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$ 90.00 <span>$120.00</span></div>
+        <a href="#book" class="btn">book now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./package4.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>USA</h3>
+            <p>"From NYC’s buzz to the Grand Canyon’s awe—endless road trips and bigger-than-life experiences!"</p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$ 170.00 <span>$190.00</span></div>
+        <a href="#book" class="btn">book now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./package5.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>Japan</h3>
+            <p>"Cherry blossoms, neon cities, and serene temples—where futuristic meets traditional flawlessly!"</p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <div class="price">$ 120.00 <span>$150.00</span></div>
+        <a href="#book" class="btn">book now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./package6.jpg" alt="">
+        <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i>greenland</h3>
+            <p>"Glaciers, Northern Lights, and epic silence—the Arctic’s untouched wilderness will steal your soul!"</p>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="price">$ 180.00 <span>$220.00</span></div>
+        <a href="#book" class="btn">book now</a>
+        </div>
+    </div>
+
+   </div> 
+
+</section>
+<!--        Package Section   Ends   -->
+
+<!--        Service Section   Starts   -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+     </h1>
+
+     <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Enjoy comfortable stays without stretching your budget. We bring you the best deals on hotels that
+                 combine affordability with great service, ensuring a relaxing trip wherever you go.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Taste the world with our handpicked local cuisines and exotic beverages. From street food to fine 
+                dining, discover the best flavors every destination has to offer.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p>Your safety is our priority. Access travel safety tips, emergency contact info, and local health
+                 guidelines to ensure a worry-free experience throughout your journey.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Explore unique cultures, landmarks, and traditions from every corner of the globe. Our travel
+                guides help you plan unforgettable experiences no matter the destination.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travels</h3>
+            <p>Get to your destination quickly and comfortably. We provide insights into the best travel routes, 
+                flights, and transport options to save your time and energy. </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>For the thrill-seekers and explorers — hike, dive, climb, and roam! Find the most exciting activities
+                 and offbeat paths to add an adrenaline rush to your vacation.</p>
+        </div>
+
+     </div>
+
+</section>
+<!--        Service Section   Ends   -->
+
+<!--        Gallery Section   Starts   -->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+     </h1>
+
+     <div class="box-container">
+
+        <div class="box">
+        <img src="./gallery1.jpg" alt="">
+        <div class="content">
+            <h3>River Canal</h3>
+            <p>"Rialto Bridge + canals = pure romance. Get lost in the charm!"</p>
+            <a href="https://www.shutterstock.com/search/italian-rivers" class="btn">see more</a>
+        </div>
+     </div>
+
+     <div class="box">
+        <img src="./gallery2.jpg" alt="">
+        <div class="content">
+            <h3>Spiritual Retreats</h3>
+            <p>"Peaceful, serene, and perfect for soul-searching!"</p>
+            <a href="https://www.revv.co.in/blogs/places-in-india-for-peaceful-vacations/amp/" class="btn">see more</a>
+        </div>
+     </div>
+
+     <div class="box">
+        <img src="./gallery3.jpg" alt="">
+        <div class="content">
+            <h3>Luxury</h3>
+            <p> "Five-star treatment, stunning resorts, and pure relaxation!"</p>
+            <a href="https://simple.wikipedia.org/wiki/Petronas_Towers" class="btn">see more</a>
+        </div>
+     </div>
+
+     <div class="box">
+        <img src="./gallery4.jpg" alt="">
+        <div class="content">
+            <h3>Paradise Found! 🌴</h3>
+            <p>"Crystal-clear waters, powdery white sand, and the most stunning sunsets! </p>
+            <a href="https://www.timeout.com/news/these-are-officially-the-worlds-best-coastal-cities-070423" class="btn">see more</a>
+        </div>
+     </div>
+
+     <div class="box">
+        <img src="./gallery5.jpg" alt="">
+        <div class="content">
+            <h3>Bridge</h3>
+            <p>"The Golden Gate Bridge is even more stunning in person—iconic views, foggy charm, and endless photo ops!"</p>
+            <a href="https://timesofindia.indiatimes.com/travel/things-to-do/5-most-magnificent-bridges-to-witness-in-india/articleshow/109862806.cms" class="btn">see more</a>
+        </div>
+     </div>
+
+     <div class="box">
+        <img src="./gallery6.jpg" alt="">
+        <div class="content">
+            <h3>Cultural Spots</h3>
+            <p>"Rich history, amazing architecture, and delicious local food!"</p>
+            <a href="https://civitavecchia.portmobility.it/en/port-civitavecchia-address-how-get-and-useful-info" class="btn">see more</a>
+        </div>
+     </div>
+
+
+     <div class="box">
+        <img src="./gallery7.jpg" alt="">
+        <div class="content">
+            <h3>Mountains</h3>
+            <p>"Breathtaking views, crisp air, and perfect for adventure lovers!"</p>
+            <a href="https://unsplash.com/photos/brown-mountain-near-body-of-water-during-daytime-U6pLKRSQLis" class="btn">see more</a>
+        </div>
+     </div>
+
+     <div class="box">
+        <img src="./gallery8.jpg" alt="">
+        <div class="content">
+            <h3>Cities</h3>
+            <p> "Vibrant, historic, and packed with unforgettable experiences!"</p>
+            <a href="https://blog.fuertehoteles.com/en/destinations/villages-in-andalucia/" class="btn">see more</a>
+        </div>
+     </div>
+
+
+     <div class="box">
+        <img src="./gallery9.jpg" alt="">
+        <div class="content">
+            <h3>Waterfalls</h3>
+            <p>"‘The Smoke that Thunders’ lives up to its name—epic and utterly majestic!"</p>
+            <a href="https://en.wikipedia.org/wiki/Waterfall" class="btn">see more</a>
+        </div>
+     </div>
+</div>
+
+</section>
+<!--        Gallery Section   Ends   -->        
+
+<!--        Review Section   Starts   -->  
+
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+     </h1>
+
+     <div class=" swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review1.avif" alt="">
+                    <h3>Alex Carey</h3>
+                    <p>"Absolutely breathtaking! The tour was well-organized, the guides were knowledgeable,
+                         and the sights were unforgettable. Highly recommend this destination to anyone
+                          looking for adventure and culture."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>     
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review2.jpg" alt="">
+                    <h3>Steve Smith</h3>
+                    <p>"From the stunning landscapes to the warm hospitality, this trip exceeded all expectations.
+                         The accommodations were top-notch, and every activity was worth it. Will definitely visit again!"</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>     
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review3.jpg" alt="">
+                    <h3>Joe Root</h3>
+                    <p>"If you love nature and adventure, this is the place for you! Hiking, wildlife spotting,
+                         and cultural experiences—everything was amazing. The tour operators were professional 
+                         and made sure we had the best time."</p>
+
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>     
+                </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="./review5.jpg" alt="">
+                    <h3>Mitchell Marsh</h3>
+                    <p>"This place is a hidden gem! The local food, historical sites, and friendly people 
+                        made our trip unforgettable. The tour company made everything seamless—no stress,
+                        just pure enjoyment.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                       
+                    </div>     
+                </div>
+            </div>
+
+        
+        </div>
+     </div>
+
+</section>
+<!--        Review Section   Ends   -->  
+<!--        Contact Section   Starts   -->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+     </h1>
+
+     <div class="row">
+
+        <div class="image">
+            <img src="./travel.jpg" alt="">
+        </div>
+
+        <form onsubmit="return handleContactSubmit()">
+  <input type="text" id="contactName" placeholder="name" required>
+  <input type="email" id="contactEmail" placeholder="email" required>
+  <input type="text" id="contactNumber" placeholder="number" required>
+  <input type="text" id="contactSubject" placeholder="subject">
+  <textarea id="contactMessage" placeholder="message" cols="30" rows="10"></textarea>
+  <input type="submit" value="Send Message" class="btn">
+</form>
+
+     </div>
+
+</section>
+        
+
+<!--        Contact Section   Ends   -->  
+
+<!-- Brand Section-->
+
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./brand1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./brand2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./brand3.png" alt=""></div>
+            <div class="swiper-slide"><img src="./brand4.png" alt=""></div>
+            <div class="swiper-slide"><img src="./brand5.png" alt=""></div>
+            <div class="swiper-slide"><img src="./brand6.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+
+<!--Footer Section-->
+
+<section class="footer">
+    
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Travel is more than just visiting places—it’s about unforgettable experiences, 
+                cultural connections, and discovering the extraordinary. Whether you're chasing 
+                -packed adventures, savoring world-class cuisine, or unwinding in luxury stays, 
+                our global guide equips you with the insights to travel smarter, safer, and with 
+                more wonder.</p>
+        </div>
+
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linked-in</a>
+        </div>
+    </div>
+
+    <h1 class="credit">created by<span> Akhil / Siddartha / Vyas</span> | all rights reserved|</h1>
+</section>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--        JS      -->
+    <script src="./script.js">
+
+    </script>
+
+</body>
+</html>
